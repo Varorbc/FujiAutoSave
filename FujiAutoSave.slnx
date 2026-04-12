@@ -1,0 +1,17 @@
+<Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
+    <File Path=".editorconfig" />
+    <File Path=".gitattributes" />
+    <File Path=".gitignore" />
+    <File Path="Directory.Build.props" />
+    <File Path="Directory.Packages.props" />
+    <File Path="Dockerfile" />
+    <File Path="global.json" />
+    <File Path="NuGet.config" />
+    <File Path="README.md" />
+  </Folder>
+  <Project Path="src/FujiAutoSave.Core/FujiAutoSave.Core.csproj" />
+  <Project Path="src/FujiAutoSave/FujiAutoSave.csproj" />
+  <Project Path="tests/FujiAutoSave.Core.Tests/FujiAutoSave.Core.Tests.csproj" />
+</Solution>

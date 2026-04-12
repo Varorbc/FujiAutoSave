@@ -1,0 +1,19 @@
+<Project>
+
+  <PropertyGroup>
+    <NetCoreVersion>net10.0</NetCoreVersion>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <LangVersion>latest</LangVersion>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)'=='Release'">
+    <DebugType>none</DebugType>
+  </PropertyGroup>
+
+</Project>
