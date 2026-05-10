@@ -1,6 +1,6 @@
 # Fuji AutoSave
 
-通过 WiFi 自动备份富士相机照片到电脑的服务。
+通过 WiFi 自动备份富士相机里的照片的服务。
 
 [![CI](https://github.com/Varorbc/FujiAutoSave/actions/workflows/ci.yml/badge.svg)](https://github.com/Varorbc/FujiAutoSave/actions/workflows/ci.yml)
 [![Release](https://github.com/Varorbc/FujiAutoSave/actions/workflows/release.yml/badge.svg)](https://github.com/Varorbc/FujiAutoSave/actions/workflows/release.yml)
