@@ -1,0 +1,13 @@
+version: "3.8"
+
+services:
+  app:
+    image: varorbc/fuji-autosave:latest
+    container_name: fuji-autosave
+    ports:
+      - 51541:51541/tcp
+      - 51541:51541/udp
+      - 51542:51542/tcp
+      - 51542:51542/udp
+    volumes:
+      - ${wizard_path}:/root/Photos

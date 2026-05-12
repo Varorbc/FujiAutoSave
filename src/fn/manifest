@@ -1,0 +1,18 @@
+appname=fuji-autosave
+version=1.0.0
+display_name=富士同步
+desc="""通过 WiFi 自动备份富士相机里的照片到飞牛。
+<strong>使用说明<strong>
+<strong>注册：</strong>
+<span>相机 → 设置 → 连接设定 → PC自动保存</span>
+<strong>连接：</strong>
+<span>相机 → 播放菜单 → PC自动保存 → 选择你的飞牛</span>
+"""
+platform=x86
+source=thirdparty
+maintainer=Varorbc
+maintainer_url=https://github.com/Varorbc/FujiAutoSave
+distributor=Varorbc
+distributor_url=https://github.com/Varorbc/FujiAutoSave
+service_port=51541
+changelog=新增自动备份功能

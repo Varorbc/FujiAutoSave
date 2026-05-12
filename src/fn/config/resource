@@ -1,0 +1,13 @@
+{
+  "docker-project": {
+    "projects": [
+      {
+        "name": "fuji-autosave",
+        "path": "docker"
+      }
+    ]
+  },
+  "data-share": {
+    "shares": []
+  }
+}

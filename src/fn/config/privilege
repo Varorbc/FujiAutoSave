@@ -1,0 +1,7 @@
+{
+  "defaults": {
+    "run-as": "package"
+  },
+  "groupname": "fuji-autosave",
+  "username": "fuji-autosave"
+}
