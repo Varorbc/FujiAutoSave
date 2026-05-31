@@ -11,4 +11,4 @@ services:
       - 51542:51542/tcp
       - 51542:51542/udp
     volumes:
-      - ${wizard_path}:/root/Photos
+      - ${wizard_path}:/app/Photos
