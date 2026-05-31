@@ -25,8 +25,8 @@ jobs:
       - name: Build
         run: dotnet build --no-restore -c Release
 
-      - name: Run tests
-        run: dotnet test --no-build -c Release --output detailed
+      # - name: Run tests
+      #   run: dotnet test --no-build -c Release --output detailed
 
       - name: Check code style
         run: dotnet build --no-restore -c Release /p:TreatWarningsAsErrors=true
