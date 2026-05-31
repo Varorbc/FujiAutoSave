@@ -1,7 +1,7 @@
 appname=fuji-autosave
 version=1.0.0
 display_name=富士同步
-desc="""通过 WiFi 自动备份富士相机里的照片到飞牛。
+desc="""富士同步用于在局域网内自动接收并备份富士相机通过 Wi‑Fi 发送的照片文件，让你无需依赖官方软件，也不必再频繁插拔相机的 SD 卡，就能在飞牛上实现稳定、高效、全自动的无线备份体验。
 <strong>使用说明<strong>
 <strong>注册：</strong>
 <span>相机 → 设置 → 连接设定 → PC自动保存</span>

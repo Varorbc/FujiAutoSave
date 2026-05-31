@@ -4,6 +4,7 @@ services:
   app:
     image: varorbc/fuji-autosave:latest
     container_name: fuji-autosave
+    hostname: fuji-autosave
     ports:
       - 51541:51541/tcp
       - 51541:51541/udp
