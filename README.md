@@ -1,6 +1,7 @@
 # Fuji AutoSave
 
-通过 WiFi 自动备份富士相机里的照片的服务。
+**FujiAutoSave** 用于在局域网内 **自动接收并备份富士相机通过 Wi‑Fi 发送的照片文件**，
+让你无需依赖官方软件，也不必再频繁插拔相机的 SD 卡，就能在任意设备上（PC、NAS、服务器、Docker）实现 **稳定、高效、全自动的无线备份体验**。  
 
 [![CI](https://github.com/Varorbc/FujiAutoSave/actions/workflows/ci.yml/badge.svg)](https://github.com/Varorbc/FujiAutoSave/actions/workflows/ci.yml)
 [![Release](https://github.com/Varorbc/FujiAutoSave/actions/workflows/release.yml/badge.svg)](https://github.com/Varorbc/FujiAutoSave/actions/workflows/release.yml)
