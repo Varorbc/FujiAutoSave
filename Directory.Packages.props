@@ -10,7 +10,7 @@
     <PackageVersion Include="Microsoft.Extensions.Hosting" Version="$(MicrosoftExtensionVersion)" />
     <PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="$(MicrosoftExtensionVersion)" />
     <PackageVersion Include="Microsoft.Testing.Extensions.CodeCoverage" Version="18.7.0" />
-    <PackageVersion Include="xunit.v3" Version="4.0.0-pre.108" />
+    <PackageVersion Include="xunit.v3" Version="4.0.0-pre.128" />
   </ItemGroup>
   <ItemGroup>
     <GlobalPackageReference Include="SonarAnalyzer.CSharp" Version="10.27.0.140913" />
