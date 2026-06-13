@@ -18,7 +18,6 @@ ARG BUILD_CONFIGURATION=Release
 RUN dotnet publish "./FujiAutoSave.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAppHost=true
 
 FROM mcr.microsoft.com/dotnet/runtime-deps:11.0-preview-alpine AS final
-USER $APP_UID
 WORKDIR /app
 COPY --from=publish /app/publish .
 ENTRYPOINT ["./FujiAutoSave"]
