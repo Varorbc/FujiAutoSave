@@ -17,15 +17,15 @@ internal static partial class AutoSaveMessageFactory
     [GeneratedRegex(
         $@"^REGISTER (?<{nameof(RegisterMessage.Target)}>\S+) HTTP/(?<{nameof(RegisterMessage.HttpVersion)}>\d+\.\d+)\r\n" +
         $@"HOST:(?<{nameof(RegisterMessage.Host)}>\d+\.\d+\.\d+\.\d+):(?<{nameof(RegisterMessage.Port)}>\d+)\r\n" +
-        $@"DSCNAME:(?<{nameof(RegisterMessage.Name)}>[A-Za-z0-9\-]+)\r\n" +
-        $@"DSCMODEL:(?<{nameof(RegisterMessage.Model)}>[A-Za-z0-9\-]+)\r\n$",
+        $@"DSCNAME:(?<{nameof(RegisterMessage.Name)}>[^\r\n]+)\r\n" +
+        $@"DSCMODEL:(?<{nameof(RegisterMessage.Model)}>[^\r\n]+)\r\n$",
         RegexOptions.Compiled)]
     private static partial Regex RegisterRegex();
 
     [GeneratedRegex(
         $@"^IMPORT (?<{nameof(ImportMessage.Target)}>\S+) HTTP/(?<{nameof(ImportMessage.HttpVersion)}>\d+\.\d+)\r\n" +
         $@"HOST:(?<{nameof(ImportMessage.Host)}>\d+\.\d+\.\d+\.\d+):(?<{nameof(ImportMessage.Port)}>\d+)\r\n" +
-        $@"DSCNAME:(?<{nameof(ImportMessage.Name)}>[A-Za-z0-9\-]+)\r\n" +
+        $@"DSCNAME:(?<{nameof(ImportMessage.Name)}>[^\r\n]+)\r\n" +
         $@"DSCPORT:(?<DscPort>[^\r\n]*)\r\n" +
         @"(\r\n)*$",
         RegexOptions.Compiled)]

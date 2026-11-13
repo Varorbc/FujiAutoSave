@@ -374,7 +374,7 @@ public sealed class FujiPtpSession(ILogger<FujiPtpSession> logger) : IFujiPtpSes
             Payload = data
         };
         var dataBuffer = dataPacket.ToByteArray(payload: data);
-        await _commandStream!.WriteAsync(dataBuffer, cancellationToken);
+        await _commandStream.WriteAsync(dataBuffer, cancellationToken);
 
         var ackPacket = await ReadPacketAsync(DefaultTimeout, cancellationToken);
         logger.ReceivedRawData(BitConverter.ToString(ackPacket ?? []));

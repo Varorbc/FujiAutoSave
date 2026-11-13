@@ -49,7 +49,7 @@ public sealed class FujiCameraClient(ILogger<FujiCameraClient> logger) : IFujiCa
 
             logger.StartedListeningDiscovery(DiscoverPort);
 
-            _discoveryTask = Task.Run(() => DiscoveryLoopAsync(_discoveryCts.Token));
+            _discoveryTask = Task.Run(() => DiscoveryLoopAsync(_discoveryCts.Token), _discoveryCts.Token);
         }
     }
 
@@ -63,7 +63,7 @@ public sealed class FujiCameraClient(ILogger<FujiCameraClient> logger) : IFujiCa
             }
 
             _discoveryCts.Cancel();
-            _ = _discoveryTask?.WaitAsync(TimeSpan.FromSeconds(5));
+            _ = _discoveryTask?.WaitAsync(TimeSpan.FromSeconds(5), _discoveryCts.Token);
 
             _discoveryClient?.Close();
             _discoveryClient?.Dispose();
@@ -99,7 +99,7 @@ public sealed class FujiCameraClient(ILogger<FujiCameraClient> logger) : IFujiCa
 
             logger.StartedListeningConnection(ConnectPort);
 
-            _connectionTask = Task.Run(() => ConnectionLoopAsync(_connectionCts.Token));
+            _connectionTask = Task.Run(() => ConnectionLoopAsync(_connectionCts.Token), _connectionCts.Token);
         }
     }
 
@@ -113,7 +113,7 @@ public sealed class FujiCameraClient(ILogger<FujiCameraClient> logger) : IFujiCa
             }
 
             _connectionCts.Cancel();
-            _ = _connectionTask?.WaitAsync(TimeSpan.FromSeconds(5));
+            _ = _connectionTask?.WaitAsync(TimeSpan.FromSeconds(5), _connectionCts.Token);
 
             _connectionClient?.Close();
             _connectionClient?.Dispose();
